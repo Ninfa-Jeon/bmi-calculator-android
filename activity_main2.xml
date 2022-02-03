@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0D22"
+    android:backgroundTint="#0A0D22"
+    tools:context=".MainActivity2">
+
+    <FrameLayout
+        android:layout_width="390dp"
+        android:layout_height="474dp"
+        android:background="#111328"
+        android:backgroundTint="#111328"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.532" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="215dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Normal"
+                android:textAlignment="center"
+                android:textColor="#11D872"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bmi"
+                android:layout_width="250dp"
+                android:layout_height="151dp"
+                android:layout_marginTop="56dp"
+                android:text="20.0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="80sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/result" />
+
+            <TextView
+                android:id="@+id/interpretation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="You have a normal body weight."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bmi" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/reCalculate"
+        android:layout_width="417dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="16dp"
+        android:text="Re - Calculate"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="339dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:text="Your Result"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FBFBFB"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
